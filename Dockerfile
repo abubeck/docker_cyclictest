@@ -22,5 +22,11 @@ FROM resin/rpi-raspbian
 
 MAINTAINER Alexander Bubeck <alexander.bubeck@zuehlke.com>
 
+RUN apt-get -q update \
+	&& apt-get -qy install \
+		iputils-ping \
+	&& rm -rf /var/lib/apt/lists/*
+
 WORKDIR /root/
 COPY --from=builder /work/rt-tests/cyclictest .
+COPY load.sh .
