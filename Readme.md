@@ -12,8 +12,8 @@ With the "-p" option you can modify the process priority.
 
 The following analysis was done on an raspberry pi zero w. The cycletest was running within a docker container and without (direct) with the following cycletest settings:
 
-    cyclictest -l50000 -m -Sp99 -i200 -h0 -q (Prio 99)
-    cyclictest -l50000 -m -Sp20 -i200 -h0 -q (Prio 20)
+    cyclictest -l600000 -m -Sp99 -i200 -h0 -q (Prio 99)
+    cyclictest -l600000 -m -Sp20 -i200 -h0 -q (Prio 20)
 
 The load task is running in parallel. 
 Data was gathered over 1min runtime.
