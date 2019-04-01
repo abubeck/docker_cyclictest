@@ -20,7 +20,7 @@ Data was gathered over 1min runtime.
 
 The results:
 
-|         | Priority           | Avg. latencies (ms)  | Max. latencies (ms) |
+|         | Priority           | Avg. latencies (us)  | Max. latencies (us) |
 | ------------- | ------------- | ----- | ------ |
 | Docker        | 99 | 49 | 139 |
 | Docker        | 20 | 47 | 909 |
